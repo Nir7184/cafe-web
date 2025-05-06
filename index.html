@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Brew Bliss Café – Where warmth meets flavor. Explore our handcrafted menu, cozy ambiance, and story.">
+    <title>Brew Bliss Café – Taste the Joy in Every Sip</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Brew Bliss Café</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sip. Relax. Repeat.</h1>
+            <p>Discover your favorite blend at Brew Bliss Café</p>
+            <a href="#menu" class="cta-button">See Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <div class="category">
+                <h3>Beverages</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe04.jpg" alt="Espresso">
+                        <h4>Espresso</h4>
+                        <p>Rich and bold coffee shot</p>
+                        <span class="price">₹120</span>
+                        <button class="add-to-cart" data-name="Espresso" data-price="120" data-img="https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe04.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/049/632/997/small_2x/heart-shaped-latte-art-in-a-white-cup-with-coffee-beans-isolated-on-wooden-table-side-view-of-taiwan-baked-food-photo.jpg" alt="Latte">
+                        <h4>Latte</h4>
+                        <p>Smooth espresso with steamed milk</p>
+                        <span class="price">₹150</span>
+                        <button class="add-to-cart" data-name="Latte" data-price="150" data-img="https://static.vecteezy.com/system/resources/thumbnails/049/632/997/small_2x/heart-shaped-latte-art-in-a-white-cup-with-coffee-beans-isolated-on-wooden-table-side-view-of-taiwan-baked-food-photo.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cappuccino">
+                        <h4>Cappuccino</h4>
+                        <p>Perfect balance of espresso and foam</p>
+                        <span class="price">₹140</span>
+                        <button class="add-to-cart" data-name="Cappuccino" data-price="140" data-img="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://t3.ftcdn.net/jpg/03/16/01/48/360_F_316014817_EC1KN7mAD86ALYhhwGUUeSsQoJIVMtfQ.jpg" alt="Cold Brew">
+                        <h4>Cold Brew</h4>
+                        <p>Slow-steeped for 24 hours</p>
+                        <span class="price">₹160</span>
+                        <button class="add-to-cart" data-name="Cold Brew" data-price="160" data-img="https://t3.ftcdn.net/jpg/03/16/01/48/360_F_316014817_EC1KN7mAD86ALYhhwGUUeSsQoJIVMtfQ.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://wp.shottbeverages.com/wp-content/uploads/2021/06/decadent-hot-chocolate-img-1.jpg" alt="Hot Chocolate">
+                        <h4>Hot Chocolate</h4>
+                        <p>Rich and creamy chocolate delight</p>
+                        <span class="price">₹130</span>
+                        <button class="add-to-cart" data-name="Hot Chocolate" data-price="130" data-img="https://wp.shottbeverages.com/wp-content/uploads/2021/06/decadent-hot-chocolate-img-1.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://img.freepik.com/premium-photo/iced-coffee-roasted-coffee-wood-table_36078-57.jpg?semt=ais_hybrid&w=740" alt="Iced Coffee">
+                        <h4>Iced Coffee</h4>
+                        <p>Chilled coffee with milk</p>
+                        <span class="price">₹140</span>
+                        <button class="add-to-cart" data-name="Iced Coffee" data-price="140" data-img="https://img.freepik.com/premium-photo/iced-coffee-roasted-coffee-wood-table_36078-57.jpg?semt=ais_hybrid&w=740">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnSqM2sIKgQkPBjUA2-D88KJ5U2rxXgcNWA&s" alt="Mocha">
+                        <h4>Mocha</h4>
+                        <p>Espresso with chocolate and milk</p>
+                        <span class="price">₹160</span>
+                        <button class="add-to-cart" data-name="Mocha" data-price="160" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnSqM2sIKgQkPBjUA2-D88KJ5U2rxXgcNWA&s">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://ootymade.com/cdn/shop/products/407-4078365_oat-milk-chai-tea-latte-recipe-with-truva.jpg?v=1627304277&width=1445" alt="Tea">
+                        <h4>Special Tea</h4>
+                        <p>Premium tea selection</p>
+                        <span class="price">₹100</span>
+                        <button class="add-to-cart" data-name="Special Tea" data-price="100" data-img="https://ootymade.com/cdn/shop/products/407-4078365_oat-milk-chai-tea-latte-recipe-with-truva.jpg?v=1627304277&width=1445">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Breakfast</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/avocado-on-toast-f425165.jpg?quality=90&resize=500,454" alt="Avocado Toast">
+                        <h4>Avocado Toast</h4>
+                        <p>Fresh avocado on artisan bread</p>
+                        <span class="price">₹200</span>
+                        <button class="add-to-cart" data-name="Avocado Toast" data-price="200" data-img="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/avocado-on-toast-f425165.jpg?quality=90&resize=500,454">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://media02.stockfood.com/largepreviews/MjE1NjI3NjM=/00695573-Veggie-Omelet-with-White-Toast-on-a-White-Plate.jpg" alt="Omelette">
+                        <h4>Omelette with Bread</h4>
+                        <p>Fluffy omelette with fresh herbs</p>
+                        <span class="price">₹180</span>
+                        <button class="add-to-cart" data-name="Omelette with Bread" data-price="180" data-img="https://media02.stockfood.com/largepreviews/MjE1NjI3NjM=/00695573-Veggie-Omelet-with-White-Toast-on-a-White-Plate.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://www.acouplecooks.com/wp-content/uploads/2024/08/Brown-Butter-Pancakes-0002.jpg" alt="Pancakes">
+                        <h4>Pancakes with Maple Syrup</h4>
+                        <p>Fluffy pancakes with maple syrup</p>
+                        <span class="price">₹220</span>
+                        <button class="add-to-cart" data-name="Pancakes with Maple Syrup" data-price="220" data-img="https://www.acouplecooks.com/wp-content/uploads/2024/08/Brown-Butter-Pancakes-0002.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEClub_i4A4Z4Ma5f4A9WPk44S5h7gMMYDw&s" alt="Waffles">
+                        <h4>Waffles & Berries</h4>
+                        <p>Crispy waffles with fresh berries</p>
+                        <span class="price">₹240</span>
+                        <button class="add-to-cart" data-name="Waffles & Berries" data-price="240" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEClub_i4A4Z4Ma5f4A9WPk44S5h7gMMYDw&s">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIFmKSdDjQnT59g4SBeA3drvHeQivpoOAbg&s" alt="Breakfast Sandwich">
+                        <h4>Breakfast Sandwich</h4>
+                        <p>Egg, cheese, and bacon on toast</p>
+                        <span class="price">₹190</span>
+                        <button class="add-to-cart" data-name="Breakfast Sandwich" data-price="190" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIFmKSdDjQnT59g4SBeA3drvHeQivpoOAbg&s">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7pb_ggp5di2QJWh1p4IpFwADu9G6vUXkaQ&s" alt="Granola Bowl">
+                        <h4>Granola Bowl</h4>
+                        <p>Fresh fruits with yogurt and granola</p>
+                        <span class="price">₹170</span>
+                        <button class="add-to-cart" data-name="Granola Bowl" data-price="170" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7pb_ggp5di2QJWh1p4IpFwADu9G6vUXkaQ&s">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Pastries & Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://www.rainbownourishments.com/wp-content/uploads/2024/02/vegan-chocolate-muffins-1.jpg" alt="Chocolate Muffin">
+                        <h4>Chocolate Muffin</h4>
+                        <p>Rich chocolate muffin</p>
+                        <span class="price">₹90</span>
+                        <button class="add-to-cart" data-name="Chocolate Muffin" data-price="90" data-img="https://www.rainbownourishments.com/wp-content/uploads/2024/02/vegan-chocolate-muffins-1.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://theobroma.in/cdn/shop/files/HIGHRESBlueberryCheesecake-Square_grande.jpg?v=1711180961" alt="Cheesecake">
+                        <h4>Blueberry Cheesecake</h4>
+                        <p>Creamy cheesecake with blueberries</p>
+                        <span class="price">₹160</span>
+                        <button class="add-to-cart" data-name="Blueberry Cheesecake" data-price="160" data-img="https://theobroma.in/cdn/shop/files/HIGHRESBlueberryCheesecake-Square_grande.jpg?v=1711180961">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://sarahsvegankitchen.com/wp-content/uploads/2024/05/Vegan-Croissants-1.jpg" alt="Croissants">
+                        <h4>Croissants</h4>
+                        <p>Buttery and flaky</p>
+                        <span class="price">₹100</span>
+                        <button class="add-to-cart" data-name="Croissants" data-price="100" data-img="https://sarahsvegankitchen.com/wp-content/uploads/2024/05/Vegan-Croissants-1.jpg">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2024/09/THUMB-VIDEO-2_rev1-56.jpeg?im=Resize,width=742;" alt="Tiramisu">
+                        <h4>Tiramisu</h4>
+                        <p>Classic Italian dessert</p>
+                        <span class="price">₹180</span>
+                        <button class="add-to-cart" data-name="Tiramisu" data-price="180" data-img="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2024/09/THUMB-VIDEO-2_rev1-56.jpeg?im=Resize,width=742;">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://mygiftstory.in/wp-content/uploads/2022/11/Heavy-Chocolate-Blackforest-Cake-2.webp" alt="Chocolate Cake">
+                        <h4>Chocolate Cake</h4>
+                        <p>Rich chocolate cake with ganache</p>
+                        <span class="price">₹150</span>
+                        <button class="add-to-cart" data-name="Chocolate Cake" data-price="150" data-img="https://mygiftstory.in/wp-content/uploads/2022/11/Heavy-Chocolate-Blackforest-Cake-2.webp">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://chelsweets.com/wp-content/uploads/2022/04/chocolate-macarons-stacked-v3.jpg.webp" alt="Macarons">
+                        <h4>Macarons</h4>
+                        <p>French almond cookies</p>
+                        <span class="price">₹120</span>
+                        <button class="add-to-cart" data-name="Macarons" data-price="120" data-img="https://chelsweets.com/wp-content/uploads/2022/04/chocolate-macarons-stacked-v3.jpg.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="order-number">
+                    <p>Order #: <span id="orderNumber"></span></p>
+                </div>
+                <div class="total-items">
+                    <p>Total Items: <span id="totalItems">0</span></p>
+                </div>
+                <div class="total-amount">
+                    <p>Total Amount: ₹<span id="totalAmount">0</span></p>
+                </div>
+                <button id="placeOrder" class="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-history" class="order-history">
+        <h2>Order History</h2>
+        <div class="order-history-container">
+            <div class="order-list">
+                <!-- Order history will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Brew Bliss Café was established in 2021 with a simple dream: to create a space where warmth meets flavor. Our journey began with a passion for serving the perfect cup of coffee and creating a welcoming environment for our community.</p>
+                    <p>We believe in using only the finest organic coffee beans, practicing artisan baking techniques, and maintaining a calm, inviting space where everyone feels at home. Our commitment to quality and community has made us a beloved spot in Mumbai.</p>
+                    <blockquote>"A good day starts with good coffee and kind people."</blockquote>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Our Café">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGNhZmV8ZW58MHx8MHx8fDA%3D" alt="Café Interior">
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/barista-makes-coffee-customers-cafe-restaurant_124463-4951.jpg?semt=ais_hybrid&w=740" alt="Coffee Art">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNhZmV8ZW58MHx8MHx8fDA%3D" alt="Food Presentation">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhZmV8ZW58MHx8MHx8fDA%3D" alt="Café Ambience">
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.istockphoto.com/id/1400194993/photo/cappuccino-art.jpg?s=612x612&w=0&k=20&c=_nYOcyQ15cYEeUYgUzkC5qG946nkCwU06NiWKt1s8SE=" alt="Coffee Making">
+            </div>
+            <div class="gallery-item">
+                <img src="https://m.media-amazon.com/images/I/61IHLDjNYoL._AC_UF1000,1000_QL80_.jpg" alt="Café Exterior">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Brew Bliss Café, MG Road, Mumbai, India</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@brewblisscafe.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon – Sun: 8:00 AM to 10:00 PM</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2025 Brew Bliss Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            burger.classList.toggle('toggle');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    if (nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        burger.classList.remove('toggle');
+                    }
+                }
+            });
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
